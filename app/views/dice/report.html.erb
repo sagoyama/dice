@@ -1,0 +1,10 @@
+<h2>レポート：</h2>
+<p>サイコロは現在まで、<%= @count %>回振られました。</p>
+<br>
+
+<h3>総計</h3>
+<ul>
+	<% @statistics.each do |value, count| -%>
+		<li><%= value %>: <%= count %>回</li>
+	<% end -%>
+</ul>
